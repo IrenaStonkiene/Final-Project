@@ -12,19 +12,19 @@ namespace Final_Project
         public int ID { get; set; }
         public string Name { get; set; }
 
-        public double VitaminAQuanity { get; set; }
+        public double VitaminAQuantity { get; set; }
 
-        public double VitaminB1Quanity { get; set; }
+        public double VitaminB1Quantity { get; set; }
 
-        public double VitaminB2Quanity { get; set; }
-        public double VitaminB3Quanity { get; set; }
-        public double VitaminB5Quanity { get; set; }
-        public double VitaminB6Quanity { get; set; }
-        public double VitaminB7Quanity { get; set; }
-        public double VitaminB12Quanity { get; set; }
-        public double VitaminCQuanity { get; set; }
-        public double VitaminDQuanity { get; set; }
-        public double VitaminEQuanity { get; set; }
+        public double VitaminB2Quantity { get; set; }
+        public double VitaminB3Quantity { get; set; }
+        public double VitaminB5Quantity { get; set; }
+        public double VitaminB6Quantity { get; set; }
+        public double VitaminB7Quantity { get; set; }
+        public double VitaminB12Quantity { get; set; }
+        public double VitaminCQuantity { get; set; }
+        public double VitaminDQuantity { get; set; }
+        public double VitaminEQuantity { get; set; }
 
     }
 
