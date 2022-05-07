@@ -1,15 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Final_Project;
 
 Console.WriteLine("Welcome to Optimal Nutrition");
 Console.WriteLine("____________________________");
 Console.WriteLine("Please, select product from the list by product ID");
 
+var dataBase = new Database();
+var products = dataBase.GetProducts();
+
+foreach (var product in products)
+{
+    Console.WriteLine($"{product.ID} {product.Name}");
+}
+Console.WriteLine();
+
 bool runProgram = true;
 
 while (runProgram)
 {
-    Console.WriteLine("{Productlist}");//Product list will be printed
-    Console.WriteLine("Enter product ID or press enter");
+    Console.WriteLine("Enter product ID and press enter");
     var userInput = Console.ReadLine();
     runProgram = int.TryParse(userInput, out var productID);
     if (runProgram)
