@@ -6,7 +6,7 @@ namespace Final_Project
     {
         public DailyRecommendation()
         {
-            VitaminAQuantity = 2.25;
+            VitaminAQuantity = 800;
             VitaminB1Quantity = 75000;
             VitaminB2Quantity = 75000;
             VitaminB3Quantity = 100000;
