@@ -2,20 +2,8 @@
 
 namespace Final_Project
 {
-    public class Vitamins
+    public class VitaminsCalculator : ProductContent
     {
-        public double VitaminAQuantity { get; set; }
-        public double VitaminB1Quantity { get; set; }
-        public double VitaminB2Quantity { get; set; }
-        public double VitaminB3Quantity { get; set; }
-        public double VitaminB5Quantity { get; set; }
-        public double VitaminB6Quantity { get; set; }
-        public double VitaminB7Quantity { get; set; }
-        public double VitaminB12Quantity { get; set; }
-        public double VitaminCQuantity { get; set; }
-        public double VitaminDQuantity { get; set; }
-        public double VitaminEQuantity { get; set; }
-
         public void Add(Product product, double quantity)
         {
             VitaminAQuantity += product.VitaminAQuantity * quantity / 100;
@@ -30,6 +18,7 @@ namespace Final_Project
             VitaminDQuantity += product.VitaminDQuantity * quantity / 100;
             VitaminEQuantity += product.VitaminEQuantity * quantity / 100;
         }
+
         public void Deficite(DailyRecommendation recommendation)
         {
             Notify(VitaminAQuantity, recommendation.VitaminAQuantity, "Vitamin A");
@@ -44,6 +33,7 @@ namespace Final_Project
             Notify(VitaminDQuantity, recommendation.VitaminDQuantity, "Vitamin D");
             Notify(VitaminEQuantity, recommendation.VitaminEQuantity, "Vitamin E");
         }
+        
         private void Notify(double vitaminQuantity, double recommendedQuantity, string vitaminName)
         {
             if (vitaminQuantity < recommendedQuantity)
@@ -52,5 +42,4 @@ namespace Final_Project
             }
         }
     }
-    
 }

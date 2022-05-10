@@ -6,7 +6,7 @@ Console.WriteLine("Please, select product from the list by product ID");
 
 var dataBase = new Database();
 var products = dataBase.GetProducts();
-var total = new Vitamins();
+var total = new VitaminsCalculator();
 
 var dailyRecommendation = new DailyRecommendation();
 

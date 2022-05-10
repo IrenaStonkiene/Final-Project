@@ -2,7 +2,7 @@
 
 namespace Final_Project
 {
-    public class DailyRecommendation : Vitamins
+    public class DailyRecommendation : ProductContent
     {
         public DailyRecommendation()
         {
