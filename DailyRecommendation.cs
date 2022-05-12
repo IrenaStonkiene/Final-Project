@@ -14,8 +14,8 @@ namespace Final_Project
             VitaminB6Quantity = 100000;
             VitaminB7Quantity = 50000;
             VitaminB12Quantity = 10000;
-            VitaminCQuantity = 50;
-            VitaminDQuantity = 1000000;
+            VitaminDQuantity = 50;
+            VitaminCQuantity = 1000000;
             VitaminEQuantity = 335000;
         }
     }
