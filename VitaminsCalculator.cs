@@ -19,7 +19,7 @@ namespace Final_Project
             VitaminEQuantity += product.VitaminEQuantity * quantity / 100;
         }
 
-        public void Deficite(DailyRecommendation recommendation)
+        public void Deficit(DailyRecommendation recommendation)
         {
             Notify(VitaminAQuantity, recommendation.VitaminAQuantity, "Vitamin A");
             Notify(VitaminB1Quantity, recommendation.VitaminB1Quantity, "Vitamin B1");
